@@ -1440,9 +1440,9 @@ func ProgressBar() Ihandle {
 
 //Val creates a Valuator control. Selects a value in a limited interval.
 //Also known as Scale or Trackbar in native systems.
-func Val(_type string) Ihandle {
-	c_type := C.CString(_type)
-	defer C.free(unsafe.Pointer(c_type))
+func Val(_type ...string) Ihandle {
+	c_type := optionalAction(_type)
+	defer cStrFree(c_type)
 
 	//Ihandle* IupVal (const char *type);
 	return mkih(C.IupVal(c_type))
