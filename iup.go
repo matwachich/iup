@@ -1290,7 +1290,7 @@ func ImageRGBA(width, height int, pixMap []byte) Ihandle {
 
 //Item creates an item of the menu interface element. When selected, it generates an action.
 func Item(title string, action ...string) Ihandle {
-	c_title, c_action := C.CString(title), optionalAction(action)
+	c_title, c_action := C.CString(title), optionalString(action)
 	defer C.free(unsafe.Pointer(c_title))
 	defer cStrFree(c_action)
 
@@ -1327,7 +1327,7 @@ func Menu(children ...Ihandle) Ihandle {
 //When selected, this element activates a function in the application.
 //Its visual presentation can contain a text and/or an image.
 func Button(title string, action ...string) Ihandle {
-	c_title, c_action := C.CString(title), optionalAction(action)
+	c_title, c_action := C.CString(title), optionalString(action)
 	defer C.free(unsafe.Pointer(c_title))
 	defer cStrFree(c_action)
 
@@ -1337,7 +1337,7 @@ func Button(title string, action ...string) Ihandle {
 
 //Canvas creates an interface element that is a canvas - a working area for your application.
 func Canvas(action ...string) Ihandle {
-	c_action := optionalAction(action)
+	c_action := optionalString(action)
 	defer cStrFree(c_action)
 
 	//Ihandle* IupCanvas (const char* action);
@@ -1362,9 +1362,9 @@ func User() Ihandle {
 }
 
 //Label creates a label interface element, which displays a separator, a text or an image.
-func Label(title string) Ihandle {
-	c_title := C.CString(title)
-	defer C.free(unsafe.Pointer(c_title))
+func Label(title ...string) Ihandle {
+	c_title := optionalString(title)
+	defer cStrFree(c_title)
 
 	//Ihandle* IupLabel (const char* title);
 	return mkih(C.IupLabel(c_title))
@@ -1374,7 +1374,7 @@ func Label(title string) Ihandle {
 //The list can be visible or can be dropped down. It also can have an edit box for text input. So it is a 4 in 1 element.
 //In native systems the dropped down case is called Combo Box.
 func List(action ...string) Ihandle {
-	c_action := optionalAction(action)
+	c_action := optionalString(action)
 	defer cStrFree(c_action)
 
 	//Ihandle* IupList (const char* action);
@@ -1383,7 +1383,7 @@ func List(action ...string) Ihandle {
 
 //Text creates an editable text field.
 func Text(action ...string) Ihandle {
-	c_action := optionalAction(action)
+	c_action := optionalString(action)
 	defer cStrFree(c_action)
 
 	//Ihandle* IupText (const char* action);
@@ -1395,7 +1395,7 @@ func Text(action ...string) Ihandle {
 //Since IUP 3.0, IupText has support for multiple lines when the MULTILINE attribute is set to YES.
 //Now when a IupMultiline element is created in fact a IupText element with MULTILINE=YES is created.
 func MultiLine(action ...string) Ihandle {
-	c_action := optionalAction(action)
+	c_action := optionalString(action)
 	defer cStrFree(c_action)
 
 	//Ihandle* IupMultiLine (const char* action);
@@ -1406,7 +1406,7 @@ func MultiLine(action ...string) Ihandle {
 //It is a two-state (on/off) button that, when selected, generates an action that activates a function in the associated application.
 //Its visual representation can contain a text or an image.
 func Toggle(title string, action ...string) Ihandle {
-	c_title, c_action := C.CString(title), optionalAction(action)
+	c_title, c_action := C.CString(title), optionalString(action)
 	defer C.free(unsafe.Pointer(c_title))
 	defer cStrFree(c_action)
 
@@ -1441,7 +1441,7 @@ func ProgressBar() Ihandle {
 //Val creates a Valuator control. Selects a value in a limited interval.
 //Also known as Scale or Trackbar in native systems.
 func Val(_type ...string) Ihandle {
-	c_type := optionalAction(_type)
+	c_type := optionalString(_type)
 	defer cStrFree(c_type)
 
 	//Ihandle* IupVal (const char *type);

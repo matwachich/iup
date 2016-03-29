@@ -17,11 +17,11 @@ func bool2int(v bool) int {
 	}
 }
 
-func optionalAction(action []string) *C.char {
+func optionalString(str []string) *C.char {
 	if len(action) == 0 {
-		return nil
+		return 0
 	} else {
-		return cStrOrNull(action[0])
+		return C.Cstring(str[0])
 	}
 }
 
