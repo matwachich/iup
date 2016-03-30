@@ -18,10 +18,10 @@ func bool2int(v bool) int {
 }
 
 func optionalString(str []string) *C.char {
-	if len(action) == 0 {
-		return 0
+	if len(str) == 0 {
+		return nil
 	} else {
-		return C.Cstring(str[0])
+		return C.CString(str[0])
 	}
 }
 

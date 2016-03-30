@@ -1741,7 +1741,11 @@ func Alarm(title, msg, b1, b2, b3 string) int {
 //int IupScanf(const char *format, ...);
 
 //ListDialog shows a modal dialog to select items from a simple or multiple selection list.
-func ListDialog(_type int, title string, list []string, op, maxCol, maxLin int) (ret int, marks []bool) {
+func ListDialog(_type int, title string, list []string, op, maxCol, maxLin int, marks *[]bool) (ret int) {
+	if len(list) != len(*marks) {
+		panic(fmt.Errorf("bad parameter passed to iup.ListDialog"))
+	}
+
 	c_title := C.CString(title)
 	defer C.free(unsafe.Pointer(c_title))
 
@@ -1756,10 +1760,16 @@ func ListDialog(_type int, title string, list []string, op, maxCol, maxLin int) 
 	}()
 
 	pMark := make([]C.int, len(list))
+	for i := 0; i < len(list); i++ {
+		if (*marks)[i] {
+			pMark[i] = 1
+		} else {
+			pMark[i] = 0
+		}
+	}
 	defer func() {
-		marks = make([]bool, len(list))
 		for i := 0; i < len(list); i++ {
-			marks[i] = pMark[i] != C.int(0)
+			(*marks)[i] = pMark[i] != C.int(0)
 		}
 	}()
 
