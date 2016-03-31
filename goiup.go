@@ -31,10 +31,16 @@ func GetGlobalIh(name string) Ihandle {
 
 // additional functions (mainly methods on Ihandle) for golang
 
+//Go specific note: doesn't exists in C IUP.
 func (ih Ihandle) GetIhandle(pih *Ihandle) Ihandle {
 	if pih != nil {
 		*pih = ih
 	}
+	return ih
+}
+
+func (ih Ihandle) SetHandle(name string) Ihandle {
+	SetHandle(name, ih)
 	return ih
 }
 
