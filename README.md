@@ -46,4 +46,5 @@ They must be subfolders in order to be able to find the static libs.
 iupweb doesn't work because it needs MS Visual C++ compiler (OLE...)
 
 # Todo
-Find a way to compile the IUP lib from source (as I said, absolutly no experience with unix tools (make, configure...)) to include directly the source code of IUP to this wrapper.
+- Find a way to compile the IUP lib from source (as I said, absolutly no experience with unix tools (make, configure...)) to include directly the source code of IUP to this wrapper.
+- Make wrappers for CD and IM (other TECGRAF's libraries) to use them with IUP.
