@@ -43,7 +43,8 @@ The sub folders in the IUP folder are additional libraries of IUP. They all depe
 They must be subfolders in order to be able to find the static libs.
 
 # Known issues
-iupweb doesn't work because it needs MS Visual C++ compiler (OLE...)
+- iupweb doesn't work because it needs MS Visual C++ compiler (OLE...).
+- I don't think it's really an issue when using Go, but Lua stuff is not (and will not be) implemented.
 
 # Todo
 - Find a way to compile the IUP lib from source (as I said, absolutly no experience with unix tools (make, configure...)) to include directly the source code of IUP to this wrapper.
