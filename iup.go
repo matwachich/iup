@@ -892,6 +892,8 @@ func SetFunction(name string, fn interface{}) uintptr {
 	//Icallback IupSetFunction(const char *name, Icallback func);
 
 	switch fn.(type) {
+	case nil:
+		return uintptr(unsafe.Pointer(C.__IupSetFunction(c_name, unsafe.Pointer(uintptr(0)))))
 	case uintptr:
 		return uintptr(unsafe.Pointer(C.__IupSetFunction(c_name, unsafe.Pointer(fn.(uintptr)))))
 	default:
