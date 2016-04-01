@@ -61,7 +61,7 @@ func mkih(p *C.Ihandle) Ihandle {
 func Open() int {
 	//int IupOpen (int *argc, char ***argv);
 	//TODO implement custom args passing
-	return int(C.IupOpen(&C._argc, &C._argv)) // from stdlib.h
+	return int(C.IupOpen(nil, nil /*&C._argc, &C._argv*/)) // from stdlib.h
 }
 
 //Close ends the IUP toolkit and releases internal memory.
