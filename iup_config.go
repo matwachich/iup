@@ -6,8 +6,8 @@ import (
 )
 
 /*
-#cgo CFLAGS: -m32 -I./include
-#cgo LDFLAGS: -m32 -L${SRCDIR}/lib
+#cgo CFLAGS: -I./include
+#cgo LDFLAGS: -L${SRCDIR}/lib
 #cgo LDFLAGS: -liup -liupcd -liupim -liupimglib
 #cgo LDFLAGS: -lgdi32 -lcomdlg32 -lcomctl32 -luuid -loleaut32 -lole32
 

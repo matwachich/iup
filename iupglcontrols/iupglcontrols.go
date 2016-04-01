@@ -7,8 +7,8 @@ import (
 )
 
 /*
-#cgo CFLAGS: -m32 -I./../include
-#cgo LDFLAGS: -m32 -L${SRCDIR}/../lib -L${SRCDIR}/../lib/im -L${SRCDIR}/../lib/cd
+#cgo CFLAGS: -I./../include
+#cgo LDFLAGS: -L${SRCDIR}/../lib -L${SRCDIR}/../lib/im -L${SRCDIR}/../lib/cd
 #cgo LDFLAGS: -liupglcontrols -liupgl -liup
 #cgo LDFLAGS: -lftgl
 #cgo LDFLAGS: -lstdc++

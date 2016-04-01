@@ -17,8 +17,8 @@ import (
 )
 
 /*
-#cgo CFLAGS: -m32 -I./../include
-#cgo LDFLAGS: -m32 -L${SRCDIR}/../lib -L${SRCDIR}/../lib/cd -L${SRCDIR}/../lib/im
+#cgo CFLAGS: -I./../include
+#cgo LDFLAGS: -L${SRCDIR}/../lib -L${SRCDIR}/../lib/cd -L${SRCDIR}/../lib/im
 #cgo LDFLAGS: -liup_scintilla -liupcontrols -liupcd -liup
 #cgo LDFLAGS: -lstdc++
 #cgo LDFLAGS: -lcd -lfreetype6 -lz

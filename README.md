@@ -24,14 +24,14 @@ import "github.com/matwachich/iup"
 func main() {
     iup.Open()
     defer iup.Close()
-    
+
     dlg := iup.Dialog(iup.Vbox(
         iup.Label("Hello, world!"),
         iup.Button("Click me").SetCallback("ACTION", func(ih iup.Ihandle) int {
             return iup.CLOSE
         }),
     ).SetAttributes(`MARGIN=10x10,GAP=10`))
-    
+
     iup.Show(dlg)
     iup.MainLoop()
 }
