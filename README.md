@@ -14,6 +14,13 @@ go get github.com/matwachich/iup
 
 Then, you must create a directory inside the iup folder called "lib" and put in it the static IUP libraries. You also can if you want/need to use IM or CD create the folders "im" and "cd" inside the "lib" folder and put in it the IM and CD static libraries.
 
+Download links:
+- IUP: https://sourceforge.net/projects/iup/files/3.18/Windows%20Libraries/
+- CD: https://sourceforge.net/projects/canvasdraw/files/5.9/Windows%20Libraries/
+- IM: https://sourceforge.net/projects/imtoolkit/files/3.10/Windows%20Libraries/
+
+Please download Mingw GCC static or dynamic libraries (Win32_mingw4, Win64_mingw4, Win32_dllw4, Win64_dllw4).
+
 Then you can test this hello world example:
 
 ```go
