@@ -1846,6 +1846,11 @@ func GetParam(title string, action Iparamcb, userData uintptr, format string, ar
 	//int IupGetParam(const char* title, Iparamcb action, void* user_data, const char* format,...);
 	//int IupGetParamv(const char* title, Iparamcb action, void* user_data, const char* format, int param_count, int param_extra, void** param_data);
 
+	// IUP needs a dummy action callback (don't know why yet)
+	if action == nil {
+		action = func(dialog Ihandle, paramIndex int, userData uintptr) int { return 1 }
+	}
+
 	splitFmt := strings.Split(strings.TrimSuffix(strings.TrimPrefix(format, "\n"), "\n"), "\n")
 	handles := make([]Ihandle, len(splitFmt))
 
