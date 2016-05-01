@@ -4,117 +4,117 @@ package iup
    the key code is the same as the ASCii character code. */
 
 const (
-	K_SP           = ' '  /* 32 (0x20) */
-	K_exclam       = '!'  /* 33 */
-	K_quotedbl     = '"'  /* 34 */
-	K_numbersign   = '#'  /* 35 */
-	K_dollar       = '$'  /* 36 */
-	K_percent      = '%'  /* 37 */
-	K_ampersand    = '&'  /* 38 */
-	K_apostrophe   = '\'' /* 39 */
-	K_parentleft   = '('  /* 40 */
-	K_parentright  = ')'  /* 41 */
-	K_asterisk     = '*'  /* 42 */
-	K_plus         = '+'  /* 43 */
-	K_comma        = ','  /* 44 */
-	K_minus        = '-'  /* 45 */
-	K_period       = '.'  /* 46 */
-	K_slash        = '/'  /* 47 */
-	K_0            = '0'  /* 48 (0x30) */
-	K_1            = '1'  /* 49 */
-	K_2            = '2'  /* 50 */
-	K_3            = '3'  /* 51 */
-	K_4            = '4'  /* 52 */
-	K_5            = '5'  /* 53 */
-	K_6            = '6'  /* 54 */
-	K_7            = '7'  /* 55 */
-	K_8            = '8'  /* 56 */
-	K_9            = '9'  /* 57 */
-	K_colon        = ':'  /* 58 */
-	K_semicolon    = ';'  /* 59 */
-	K_less         = '<'  /* 60 */
-	K_equal        = '='  /* 61 */
-	K_greater      = '>'  /* 62 */
-	K_question     = '?'  /* 63 */
-	K_at           = '@'  /* 64 */
-	K_A            = 'A'  /* 65 (0x41) */
-	K_B            = 'B'  /* 66 */
-	K_C            = 'C'  /* 67 */
-	K_D            = 'D'  /* 68 */
-	K_E            = 'E'  /* 69 */
-	K_F            = 'F'  /* 70 */
-	K_G            = 'G'  /* 71 */
-	K_H            = 'H'  /* 72 */
-	K_I            = 'I'  /* 73 */
-	K_J            = 'J'  /* 74 */
-	K_K            = 'K'  /* 75 */
-	K_L            = 'L'  /* 76 */
-	K_M            = 'M'  /* 77 */
-	K_N            = 'N'  /* 78 */
-	K_O            = 'O'  /* 79 */
-	K_P            = 'P'  /* 80 */
-	K_Q            = 'Q'  /* 81 */
-	K_R            = 'R'  /* 82 */
-	K_S            = 'S'  /* 83 */
-	K_T            = 'T'  /* 84 */
-	K_U            = 'U'  /* 85 */
-	K_V            = 'V'  /* 86 */
-	K_W            = 'W'  /* 87 */
-	K_X            = 'X'  /* 88 */
-	K_Y            = 'Y'  /* 89 */
-	K_Z            = 'Z'  /* 90 */
-	K_bracketleft  = '['  /* 91 */
-	K_backslash    = '\\' /* 92 */
-	K_bracketright = ']'  /* 93 */
-	K_circum       = '^'  /* 94 */
-	K_underscore   = '_'  /* 95 */
-	K_grave        = '`'  /* 96 */
-	K_a            = 'a'  /* 97 (0x61) */
-	K_b            = 'b'  /* 98 */
-	K_c            = 'c'  /* 99 */
-	K_d            = 'd'  /* 100 */
-	K_e            = 'e'  /* 101 */
-	K_f            = 'f'  /* 102 */
-	K_g            = 'g'  /* 103 */
-	K_h            = 'h'  /* 104 */
-	K_i            = 'i'  /* 105 */
-	K_j            = 'j'  /* 106 */
-	K_k            = 'k'  /* 107 */
-	K_l            = 'l'  /* 108 */
-	K_m            = 'm'  /* 109 */
-	K_n            = 'n'  /* 110 */
-	K_o            = 'o'  /* 111 */
-	K_p            = 'p'  /* 112 */
-	K_q            = 'q'  /* 113 */
-	K_r            = 'r'  /* 114 */
-	K_s            = 's'  /* 115 */
-	K_t            = 't'  /* 116 */
-	K_u            = 'u'  /* 117 */
-	K_v            = 'v'  /* 118 */
-	K_w            = 'w'  /* 119 */
-	K_x            = 'x'  /* 120 */
-	K_y            = 'y'  /* 121 */
-	K_z            = 'z'  /* 122 */
-	K_braceleft    = '{'  /* 123 */
-	K_bar          = '|'  /* 124 */
-	K_braceright   = '}'  /* 125 */
-	K_tilde        = '~'  /* 126 (0x7E) */
+	K_SP           = int(' ')  /* 32 (0x20) */
+	K_exclam       = int('!')  /* 33 */
+	K_quotedbl     = int('"')  /* 34 */
+	K_numbersign   = int('#')  /* 35 */
+	K_dollar       = int('$')  /* 36 */
+	K_percent      = int('%')  /* 37 */
+	K_ampersand    = int('&')  /* 38 */
+	K_apostrophe   = int('\'') /* 39 */
+	K_parentleft   = int('(')  /* 40 */
+	K_parentright  = int(')')  /* 41 */
+	K_asterisk     = int('*')  /* 42 */
+	K_plus         = int('+')  /* 43 */
+	K_comma        = int(',')  /* 44 */
+	K_minus        = int('-')  /* 45 */
+	K_period       = int('.')  /* 46 */
+	K_slash        = int('/')  /* 47 */
+	K_0            = int('0')  /* 48 (0x30) */
+	K_1            = int('1')  /* 49 */
+	K_2            = int('2')  /* 50 */
+	K_3            = int('3')  /* 51 */
+	K_4            = int('4')  /* 52 */
+	K_5            = int('5')  /* 53 */
+	K_6            = int('6')  /* 54 */
+	K_7            = int('7')  /* 55 */
+	K_8            = int('8')  /* 56 */
+	K_9            = int('9')  /* 57 */
+	K_colon        = int(':')  /* 58 */
+	K_semicolon    = int(';')  /* 59 */
+	K_less         = int('<')  /* 60 */
+	K_equal        = int('=')  /* 61 */
+	K_greater      = int('>')  /* 62 */
+	K_question     = int('?')  /* 63 */
+	K_at           = int('@')  /* 64 */
+	K_A            = int('A')  /* 65 (0x41) */
+	K_B            = int('B')  /* 66 */
+	K_C            = int('C')  /* 67 */
+	K_D            = int('D')  /* 68 */
+	K_E            = int('E')  /* 69 */
+	K_F            = int('F')  /* 70 */
+	K_G            = int('G')  /* 71 */
+	K_H            = int('H')  /* 72 */
+	K_I            = int('I')  /* 73 */
+	K_J            = int('J')  /* 74 */
+	K_K            = int('K')  /* 75 */
+	K_L            = int('L')  /* 76 */
+	K_M            = int('M')  /* 77 */
+	K_N            = int('N')  /* 78 */
+	K_O            = int('O')  /* 79 */
+	K_P            = int('P')  /* 80 */
+	K_Q            = int('Q')  /* 81 */
+	K_R            = int('R')  /* 82 */
+	K_S            = int('S')  /* 83 */
+	K_T            = int('T')  /* 84 */
+	K_U            = int('U')  /* 85 */
+	K_V            = int('V')  /* 86 */
+	K_W            = int('W')  /* 87 */
+	K_X            = int('X')  /* 88 */
+	K_Y            = int('Y')  /* 89 */
+	K_Z            = int('Z')  /* 90 */
+	K_bracketleft  = int('[')  /* 91 */
+	K_backslash    = int('\\') /* 92 */
+	K_bracketright = int(']')  /* 93 */
+	K_circum       = int('^')  /* 94 */
+	K_underscore   = int('_')  /* 95 */
+	K_grave        = int('`')  /* 96 */
+	K_a            = int('a')  /* 97 (0x61) */
+	K_b            = int('b')  /* 98 */
+	K_c            = int('c')  /* 99 */
+	K_d            = int('d')  /* 100 */
+	K_e            = int('e')  /* 101 */
+	K_f            = int('f')  /* 102 */
+	K_g            = int('g')  /* 103 */
+	K_h            = int('h')  /* 104 */
+	K_i            = int('i')  /* 105 */
+	K_j            = int('j')  /* 106 */
+	K_k            = int('k')  /* 107 */
+	K_l            = int('l')  /* 108 */
+	K_m            = int('m')  /* 109 */
+	K_n            = int('n')  /* 110 */
+	K_o            = int('o')  /* 111 */
+	K_p            = int('p')  /* 112 */
+	K_q            = int('q')  /* 113 */
+	K_r            = int('r')  /* 114 */
+	K_s            = int('s')  /* 115 */
+	K_t            = int('t')  /* 116 */
+	K_u            = int('u')  /* 117 */
+	K_v            = int('v')  /* 118 */
+	K_w            = int('w')  /* 119 */
+	K_x            = int('x')  /* 120 */
+	K_y            = int('y')  /* 121 */
+	K_z            = int('z')  /* 122 */
+	K_braceleft    = int('{')  /* 123 */
+	K_bar          = int('|')  /* 124 */
+	K_braceright   = int('}')  /* 125 */
+	K_tilde        = int('~')  /* 126 (0x7E) */
 )
 
 /* Printable ASCii keys */
 
 //#define iup_isprint(_c) ((_c) > 31 && (_c) < 127)
-func IsPrint(c rune) bool {
+func IsPrint(c int) bool {
 	return c > 31 && c < 127
 }
 
 /* also define the escape sequences that have keys associated */
 
 const (
-	K_BS  = '\b' /* 8 */
-	K_TAB = '\t' /* 9 */
-	K_LF  = '\n' /* 10 (0x0A) not a real key, is a combination of CR with a modifier, just to document */
-	K_CR  = '\r' /* 13 (0x0D) */
+	K_BS  = int('\b') /* 8 */
+	K_TAB = int('\t') /* 9 */
+	K_LF  = int('\n') /* 10 (0x0A) not a real key, is a combination of CR with a modifier, just to document */
+	K_CR  = int('\r') /* 13 (0x0D) */
 )
 
 /* backward compatible definitions */
@@ -129,7 +129,7 @@ const (
 /* IUP Extended Key Codes, range start at 128      */
 
 //#define iup_isXkey(_c)      ((_c) >= 128)
-func IsXKey(c rune) bool {
+func IsXKey(c int) bool {
 	return (c >= 128)
 }
 
@@ -137,57 +137,57 @@ func IsXKey(c rune) bool {
    This also means that any X11 or GDK definition can also be used. */
 
 const (
-	K_PAUSE  rune = 0xFF13
-	K_ESC    rune = 0xFF1B
-	K_HOME   rune = 0xFF50
-	K_LEFT   rune = 0xFF51
-	K_UP     rune = 0xFF52
-	K_RIGHT  rune = 0xFF53
-	K_DOWN   rune = 0xFF54
-	K_PGUP   rune = 0xFF55
-	K_PGDN   rune = 0xFF56
-	K_END    rune = 0xFF57
-	K_MIDDLE rune = 0xFF0B
-	K_Print  rune = 0xFF61
-	K_INS    rune = 0xFF63
-	K_Menu   rune = 0xFF67
-	K_DEL    rune = 0xFFFF
-	K_F1     rune = 0xFFBE
-	K_F2     rune = 0xFFBF
-	K_F3     rune = 0xFFC0
-	K_F4     rune = 0xFFC1
-	K_F5     rune = 0xFFC2
-	K_F6     rune = 0xFFC3
-	K_F7     rune = 0xFFC4
-	K_F8     rune = 0xFFC5
-	K_F9     rune = 0xFFC6
-	K_F10    rune = 0xFFC7
-	K_F11    rune = 0xFFC8
-	K_F12    rune = 0xFFC9
+	K_PAUSE  = 0xFF13
+	K_ESC    = 0xFF1B
+	K_HOME   = 0xFF50
+	K_LEFT   = 0xFF51
+	K_UP     = 0xFF52
+	K_RIGHT  = 0xFF53
+	K_DOWN   = 0xFF54
+	K_PGUP   = 0xFF55
+	K_PGDN   = 0xFF56
+	K_END    = 0xFF57
+	K_MIDDLE = 0xFF0B
+	K_Print  = 0xFF61
+	K_INS    = 0xFF63
+	K_Menu   = 0xFF67
+	K_DEL    = 0xFFFF
+	K_F1     = 0xFFBE
+	K_F2     = 0xFFBF
+	K_F3     = 0xFFC0
+	K_F4     = 0xFFC1
+	K_F5     = 0xFFC2
+	K_F6     = 0xFFC3
+	K_F7     = 0xFFC4
+	K_F8     = 0xFFC5
+	K_F9     = 0xFFC6
+	K_F10    = 0xFFC7
+	K_F11    = 0xFFC8
+	K_F12    = 0xFFC9
 )
 
 /* no Shift/Ctrl/Alt */
 
 const (
-	K_LSHIFT rune = 0xFFE1
-	K_RSHIFT rune = 0xFFE2
-	K_LCTRL  rune = 0xFFE3
-	K_RCTRL  rune = 0xFFE4
-	K_LALT   rune = 0xFFE9
-	K_RALT   rune = 0xFFEA
+	K_LSHIFT = 0xFFE1
+	K_RSHIFT = 0xFFE2
+	K_LCTRL  = 0xFFE3
+	K_RCTRL  = 0xFFE4
+	K_LALT   = 0xFFE9
+	K_RALT   = 0xFFEA
 
-	K_NUM    rune = 0xFF7F
-	K_SCROLL rune = 0xFF14
-	K_CAPS   rune = 0xFFE5
+	K_NUM    = 0xFF7F
+	K_SCROLL = 0xFF14
+	K_CAPS   = 0xFFE5
 )
 
 /* Also, these are the same as the Latin-1 definition */
 
 const (
-	K_ccedilla  rune = 0x00E7
-	K_Ccedilla  rune = 0x00C7
-	K_acute     rune = 0x00B4 /* no Shift/Ctrl/Alt */
-	K_diaeresis rune = 0x00A8
+	K_ccedilla  = 0x00E7
+	K_Ccedilla  = 0x00C7
+	K_acute     = 0x00B4 /* no Shift/Ctrl/Alt */
+	K_diaeresis = 0x00A8
 )
 
 /******************************************************/
@@ -196,48 +196,48 @@ const (
 /******************************************************/
 
 //#define iup_isShiftXkey(_c) ((_c) & 0x10000000)
-func IsShiftXKey(c rune) bool {
+func IsShiftXKey(c int) bool {
 	return (uint(c) & 0x10000000) != 0
 }
 
 //#define iup_isCtrlXkey(_c)  ((_c) & 0x20000000)
-func IsCtrlXKey(c rune) bool {
+func IsCtrlXKey(c int) bool {
 	return (uint(c) & 0x20000000) != 0
 }
 
 //#define iup_isAltXkey(_c)   ((_c) & 0x40000000)
-func IsAltXKey(c rune) bool {
+func IsAltXKey(c int) bool {
 	return (uint(c) & 0x40000000) != 0
 }
 
 //#define iup_isSysXkey(_c)   ((_c) & 0x80000000)
-func IsSysXKey(c rune) bool {
+func IsSysXKey(c int) bool {
 	return (uint(c) & 0x80000000) != 0
 }
 
 //#define iup_XkeyBase(_c)  ((_c) & 0x0FFFFFFF)
-func XKeyBase(c rune) rune {
-	return rune(uint(c) & 0x0FFFFFFF)
+func XKeyBase(c int) int {
+	return int(uint(c) & 0x0FFFFFFF)
 }
 
 //#define iup_XkeyShift(_c) ((_c) | 0x10000000)   /* Shift  */
-func XKeyShift(c rune) rune {
-	return rune(uint(c) | 0x10000000)
+func XKeyShift(c int) int {
+	return int(uint(c) | 0x10000000)
 }
 
 //#define iup_XkeyCtrl(_c)  ((_c) | 0x20000000)   /* Ctrl   */
-func XKeyCtrl(c rune) rune {
-	return rune(uint(c) | 0x20000000)
+func XKeyCtrl(c int) int {
+	return int(uint(c) | 0x20000000)
 }
 
 //#define iup_XkeyAlt(_c)   ((_c) | 0x40000000)   /* Alt    */
-func XKeyAlt(c rune) rune {
-	return rune(uint(c) | 0x40000000)
+func XKeyAlt(c int) int {
+	return int(uint(c) | 0x40000000)
 }
 
 //#define iup_XkeySys(_c)   ((_c) | 0x80000000)   /* Sys (Win or Apple) */
-func XKeySys(c rune) rune {
-	return rune(uint(c) | 0x80000000)
+func XKeySys(c int) int {
+	return int(uint(c) | 0x80000000)
 }
 
 /* These definitions are here for backward compatibility
